@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "link": "#",
+      "img": "assets/img/icons-sprite.svg#insta"
+    },
+    {
+      "link": "#",
+      "img": "assets/img/icons-sprite.svg#telegramm"
+    },
+    {
+      "link": "#",
+      "img": "assets/img/icons-sprite.svg#watsapp"
+    }
+  ]
+}
