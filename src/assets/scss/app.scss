@@ -69,84 +69,159 @@
 @import 'global/variables';
 
 body {
-  overflow-x: hidden;
-  height: auto;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial,
-    sans-serif;
-  background-color: $body-background-color;
-  background-image: none;
-  min-height: 100%;
+	overflow-x: hidden;
+	height: auto;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial,
+		sans-serif;
+	color: $light-text-color;
+	background-color: $body-background-color;
+	background-image: none;
+	min-height: 100%;
 }
 
 .page {
-  max-width: $pageWidth;
-  margin: 0 auto;
+	max-width: $page-max-width;
+	margin: 0 auto;
 
-  &__container {
-    @include xy-grid-container;
-  }
+	&__container {
+		@include xy-grid-container;
+	}
 
-  &__content-container {
-    @include xy-grid-container;
-  }
+	&__container-inner {
+		@include xy-grid;
+	}
+
+	&__top-bar {
+		@include position($position: absolute, $top: 0, $left: 0, $right: 0);
+		z-index: 1;
+	}
+}
+
+.top-bar {
+	@include xy-grid-layout($n: 3);
+	padding: 0;
+}
+
+.top-bar-left {
+	width: xy-cell-size(1 of 4);
+}
+
+.top-bar-center {
+	@include xy-cell(6);
+}
+
+.top-bar-right {
+	width: xy-cell-size(1 of 7);
+	text-align: right;
+}
+
+.section {
+
+	&__container {
+		@include xy-grid-container;
+	}
+
+	&__content-container {
+		@include xy-grid;
+	}
 }
 
 /* ==================
    LANDING NAVIGATION
    ================== */
 .nav {
-  height: 100%;
-  padding: 20px 0;
-  transition: all 300ms ease-in-out;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 300ms ease-in-out;
 
-  &__list {
-    margin-top: 3rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+	&__list {
+		margin-top: 3rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  &__item {
-    padding: 18px 0;
-    color: $light-text-color;
+	&__item {
+		padding: 18px 0;
+		color: $light-text-color;
 
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 
-  &__link {
-    @include font-bold($weight: 600);
-    font-size: rem-calc(18px);
-    color: $light-text-color;
+	&__link {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: $light-text-color;
 
-    &:hover {
-      color: $hover-color;
-    }
-  }
+		&:hover {
+			color: $hover-color;
+		}
+	}
 }
 
 /* ============
    FIRST SCREEN
    ============ */
 .first-screen {
-  background: url(../img/bg/section/bg-image.jpg) center center;
-  background-size: cover;
-  position: relative;
-  height: 680px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+		url(../img/bg/section/bg-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-position: top;
 
-  &:before {
-    position: absolute;
-    content: '';
-    background: #000000;
-    opacity: 0.5;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+	&__offer {
+		@include xy-cell(6);
+		margin-top: 200px;
+	}
 
-  &__nav {
-    @include top-bar-container;
-  }
+	&__cta {
+		@include xy-grid-container;
+		text-align: center;
+		margin-top: 100px;
+		padding-bottom: 50px;
+	}
+}
+
+.social-icon {
+
+	&__img {
+		width: 32px;
+		height: 32px;
+		fill: $secondary-color-2;
+
+		:hover {
+			fill: $hover-color;
+		}
+	}
+}
+
+.button-primary {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	color: $light-text-color;
+	background-color: $primary-color;
+	padding: 8px 30px;
+	@include border-radius(20px);
+	margin-left: 10px;
+
+	&:hover {
+		background-color: scale-color($primary-color, $lightness: -24%);
+	}
+
+	&_bg-without {
+		@include bordered($width: 1px, $type: solid, $color: $light-text-color );
+		background: none;
+	}
 }
