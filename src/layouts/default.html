@@ -18,31 +18,18 @@
 			<div class="page__container">
 
 				<div class="top-bar">
+
 					<div class="top-bar-left">
-						<nav class="nav">
-							<ul class="menu nav__list">
-								{{#each nav.list}}
-								<li class="nav__item">
-									<a href="{{ link }}" class="nav__link">{{ text }}</a>
-								</li>
-								{{/each}}
-							</ul>
-						</nav>
+						{{> nav-landing}}
 					</div>
 
 					<div class="top-bar-center">
-						<div class="logo">
-							<h3 class="logo__title">Екатерина Емельянчик</h3>
-						</div>
+						{{> logo}}
 					</div>
 
 					<div class="top-bar-right social-icon">
 						{{#each social-icon.list}}
-						<a class="social-icon__link" href="">
-							<svg class="social-icon__img">
-								<use xlink:href="{{ img }}"></use>
-							</svg>
-						</a>
+						{{> social-icon}}
 						{{/each}}
 					</div>
 				</div>

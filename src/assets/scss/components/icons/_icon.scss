@@ -1,0 +1,15 @@
+/* ====
+   ICON
+   ==== */
+.social-icon {
+
+	&__img {
+		width: 32px;
+		height: 32px;
+		fill: $secondary-color-2;
+
+		:hover {
+			fill: $hover-color;
+		}
+	}
+}
