@@ -1,0 +1,28 @@
+/* ============
+   FIRST SCREEN
+   ============ */
+.first-screen {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+		url(../img/sections/first-screen/bg/bg-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-position: top;
+
+	&__offer {
+		@include xy-cell(6);
+		margin-top: 200px;
+	}
+
+	&__cta {
+		@include xy-grid-container;
+		text-align: center;
+		margin-top: 100px;
+		padding-bottom: 50px;
+	}
+}
