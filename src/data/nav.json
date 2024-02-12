@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "link": "#",
+      "link": "#aboutMe",
       "text": "Обо мне"
     },
     {
-      "link": "#",
+      "link": "#services",
       "text": "Услуги"
     },
     {
-      "link": "#",
+      "link": "#contact",
       "text": "Контакты"
     }
   ]

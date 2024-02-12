@@ -5,43 +5,23 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Екатерина Емельянчик - Трансформационный Коуч</title>
+	<title>{{ title }}</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="{{ description }}" />
 	<link rel="stylesheet" href="{{root}}assets/css/app.css" />
 </head>
 
 <body>
-
 	<div class="page">
-
-		<!-- Start Navbar -->
+		<!-- Start Top Bar -->
 		<div class="page__top-bar">
 			<div class="page__container">
-
-				<div class="top-bar">
-
-					<div class="top-bar-left">
-						{{> nav-landing}}
-					</div>
-
-					<div class="top-bar-center">
-						{{> logo}}
-					</div>
-
-					<div class="top-bar-right social-icon">
-						{{#each social-icon.list}}
-						{{> social-icon}}
-						{{/each}}
-					</div>
-				</div>
-
+				{{> top-bar}}
 			</div>
 		</div>
-		<!-- End Navbar -->
-
+		<!-- End Top Bar -->
 		{{> body}}
-
 	</div>
-
 	<script src="{{root}}assets/js/app.js"></script>
 </body>
 
