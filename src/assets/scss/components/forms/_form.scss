@@ -1,0 +1,9 @@
+/* ====
+   FORM
+   ==== */
+.form {
+
+	&__input {
+		@include border-radius(5px);
+	}
+}

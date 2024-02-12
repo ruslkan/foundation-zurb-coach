@@ -1,0 +1,15 @@
+/* ================
+   SERVICES SECTION
+   ================ */
+.services {
+
+	&__text {
+		@include xy-cell(8);
+	}
+
+	&__button {
+		@include xy-cell(4);
+		@include flex-align-self(middle);
+		text-align: right;
+	}
+}

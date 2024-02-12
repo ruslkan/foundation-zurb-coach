@@ -1,43 +1,99 @@
 h1 {
-	font-size: 58px;
-	font-weight: bold;
-	line-height: 80px;
-	letter-spacing: 0.2px;
+	@include breakpoint(small) {
+		font-size: 28px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 58px;
+		font-weight: bold;
+		line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
 }
 
 h2 {
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 57px;
-	letter-spacing: 0.2px;
+	@include breakpoint(small) {
+		font-size: 20px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 40px;
+		font-weight: bold;
+		//line-height: 57px;
+		letter-spacing: 0.2px;
+	}
 }
 
 h3 {
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 32px;
-	letter-spacing: 0.1px;
+	@include breakpoint(small) {
+		font-size: 19px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 32px;
+		letter-spacing: 0.1px;
+	}
 }
 
 h4 {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 30px;
-	letter-spacing: 0.2px;
+	@include breakpoint(small) {
+		font-size: 14px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: 0.2px;
+	}
+
 }
 
 h5 {
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 24px;
-	letter-spacing: 0.1px;
+	@include breakpoint(small) {
+		font-size: 17px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 24px;
+		letter-spacing: 0.1px;
+	}
 }
 
 h6 {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 24px;
-	letter-spacing: 0.2px;
+	@include breakpoint(small) {
+		font-size: 16px;
+		font-weight: bold;
+		//line-height: 80px;
+		letter-spacing: 0.2px;
+	}
+
+	@include breakpoint(medium up) {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+	}
 }
 
 .btn-text {
@@ -73,4 +129,12 @@ h6 {
 	font-weight: 600;
 	line-height: 24px;
 	letter-spacing: 0.2px;
+}
+
+.text-color-primary {
+	color: $alert-color;
+}
+
+.text-color-dark {
+	color: $dark-background-color;
 }

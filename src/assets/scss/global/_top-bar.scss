@@ -1,0 +1,42 @@
+/* =======
+   TOP BAR
+   ======= */
+.top-bar {
+	//@include xy-grid-layout($n: 3);
+	padding: 0;
+}
+
+.top-bar-left {
+	@include breakpoint(small) {
+		@include xy-cell(12);
+		text-align: center;
+	}
+
+	@include breakpoint(medium up) {
+		@include xy-cell(shrink);
+	}
+}
+
+.top-bar-center {
+	@include breakpoint(small) {
+		@include xy-cell(12);
+		text-align: center;
+	}
+
+	@include breakpoint(medium up) {
+		@include xy-cell(auto);
+		//@include xy-cell(6);
+	}
+}
+
+.top-bar-right {
+	@include breakpoint(small) {
+		@include xy-cell(12);
+		text-align: center;
+	}
+
+	@include breakpoint(medium up) {
+		@include xy-cell(auto);
+		text-align: right;
+	}
+}

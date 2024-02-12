@@ -1,0 +1,18 @@
+/* ==============
+   GLOBAL SECTION
+   ============== */
+.section {
+
+	&__container {
+		@include xy-grid-container;
+	}
+
+	&__content-container {
+		@include xy-grid;
+		padding: 20px 0;
+	}
+
+	&__content {
+		padding: 20px 0;
+	}
+}

@@ -1,6 +1,6 @@
-/* ============
-   FIRST SCREEN
-   ============ */
+/* ====================
+   FIRST SCREEN SECTION
+   ==================== */
 .first-screen {
 	position: relative;
 	height: 100%;
@@ -15,7 +15,15 @@
 	background-position: top;
 
 	&__offer {
-		@include xy-cell(6);
+		@include breakpoint(small) {
+			@include xy-cell(12);
+			text-align: center;
+		}
+
+		@include breakpoint(medium up) {
+			@include xy-cell(6);
+		}
+
 		margin-top: 200px;
 	}
 

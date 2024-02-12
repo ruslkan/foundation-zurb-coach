@@ -65,116 +65,30 @@
 @include motion-ui-animations;
 
 // Custom
-@import 'global/typography';
 @import 'global/variables';
-
-body {
-	overflow-x: hidden;
-	height: auto;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial,
-		sans-serif;
-	color: $light-text-color;
-	background-color: $body-background-color;
-	background-image: none;
-	min-height: 100%;
-}
-
-.page {
-	max-width: $page-max-width;
-	margin: 0 auto;
-
-	&__container {
-		@include xy-grid-container;
-	}
-
-	&__container-inner {
-		@include xy-grid;
-	}
-
-	&__top-bar {
-		@include position($position: absolute, $top: 0, $left: 0, $right: 0);
-		z-index: 1;
-	}
-}
-
-.top-bar {
-	@include xy-grid-layout($n: 3);
-	padding: 0;
-}
-
-.top-bar-left {
-	width: xy-cell-size(1 of 4);
-}
-
-.top-bar-center {
-	@include xy-cell(6);
-}
-
-.top-bar-right {
-	width: xy-cell-size(1 of 7);
-	text-align: right;
-}
-
-.section {
-
-	&__container {
-		@include xy-grid-container;
-	}
-
-	&__content-container {
-		@include xy-grid;
-	}
-
-	&__content {
-		padding: 20px 0;
-	}
-}
-
-.about {
-	background:
-		linear-gradient(rgba(0, 0, 0, 1), rgba(37, 43, 66, 1));
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-position: top;
-
-	&__img {
-		@include xy-cell(5);
-	}
-
-	&__title {
-		text-align: center;
-	}
-
-	&__text {
-		@include xy-cell(7);
-		@include flex-align-self(middle);
-	}
-
-	&__content {
-		margin-top: 25px;
-	}
-}
-
-.img {
-	background: none;
-}
+@import 'global/typography';
 
 //* -----
 // GLOBAL
 // ------ */
+@import 'global/layout';
 @import 'global/nav-landing';
+@import 'global/top-bar';
+@import 'global/footer';
 
 //* -------
 // SECTIONS
 // --------
+@import 'sections/section';
 @import 'sections/first-screen';
+@import 'sections/about-me';
+@import 'sections/services';
+@import 'sections/payment-vendor';
+@import 'sections/contact';
 
 //* ---------
 // COMPONENTS
 // ----------
-// Buttons
 @import 'components/buttons/button';
-// Icons
 @import 'components/icons/icon';
+@import 'components/forms/form';

@@ -1,0 +1,10 @@
+/* ======================
+   PAYMENT VENDOR SECTION
+   ====================== */
+.payment-vendor {
+	background-color: $secondary-color-2;
+
+	&__img {
+		@include flex-align-self(middle);
+	}
+}

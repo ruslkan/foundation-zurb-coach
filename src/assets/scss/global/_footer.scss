@@ -1,0 +1,29 @@
+/* ======
+   FOOTER
+   ====== */
+.footer {
+	background:
+		linear-gradient(rgba(0, 0, 0, 1), rgba(37, 43, 66, 1));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: top;
+
+	&__text {
+		@include xy-cell(8);
+	}
+
+	&__paragraph {
+		margin-bottom: 0;
+	}
+
+	&__social-icon {
+		@include xy-cell(4);
+		text-align: right;
+	}
+
+	&__copyright {
+		text-align: center;
+		padding: 10px 0;
+	}
+}
