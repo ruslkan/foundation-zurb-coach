@@ -1,29 +1,18 @@
+<!-- Start Contact Section -->
 <section id="contact" class="section contact">
 	<div class="section__container">
-		<div class="section__content-container">
+		<div class="section__content-container contact__content-container">
 			<div class="contact__text">
-				<h2 class="contact__title text-color-dark">Контакт со мной</h2>
+				<h3 class="contact__title text-color-dark">Контакт со мной</h3>
 				<div class="section__content">
 					<p class="paragraph text-color-dark">Есть вопросы? Просто заполните форму ниже, и я свяжусь с Вами в течение
 						24 часов.</p>
 				</div>
 			</div>
 			<div class="contact__form">
-				<form class="form">
-					<label>
-						<input class="form__input" type="text" placeholder="Имя">
-					</label>
-					<label>
-						<input class="form__input" type="email" placeholder="e-mail">
-					</label>
-					<label>
-						<input class="form__input" type="tel" placeholder="Номер телефона (telegram, whatsapp)">
-					</label>
-				</form>
-				<div class="contact__button">
-					<button type="submit" class="button button-primary button-primary_bg-with">Отправить</button>
-				</div>
+				{{> form-contact-email}}
 			</div>
 		</div>
 	</div>
 </section>
+<!-- End Contact Section -->

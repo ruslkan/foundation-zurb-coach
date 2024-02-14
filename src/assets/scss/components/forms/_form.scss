@@ -6,4 +6,10 @@
 	&__input {
 		@include border-radius(5px);
 	}
+
+	.callout.alert {
+		@include border-radius(5px);
+		background-color: $alert-color;
+		color: $text-color;
+	}
 }

@@ -3,13 +3,27 @@
    =============== */
 .contact {
 
-	&__text {
-		@include xy-cell(8);
+	&__content-container {
 		padding: 40px 0;
 	}
 
+	&__text {
+		@include breakpoint(small) {
+			@include xy-cell(12);
+		}
+
+		@include breakpoint(medium up) {
+			@include xy-cell(8);
+		}
+	}
+
 	&__form {
-		@include xy-cell(4);
-		padding: 40px 0;
+		@include breakpoint(small) {
+			@include xy-cell(12);
+		}
+
+		@include breakpoint(medium up) {
+			@include xy-cell(4);
+		}
 	}
 }

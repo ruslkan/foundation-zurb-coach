@@ -1,6 +1,11 @@
+<!-- Start Top Bar -->
 <div class="top-bar">
 	<div class="top-bar-left">
-		{{> nav-landing}}
+		{{#ifequal layout 'default'}}
+		{{> menu-main-landing}}
+		{{else}}
+		{{> menu-main-internal}}
+		{{/ifequal}}
 	</div>
 	<div class="top-bar-center">
 		{{> logo}}
@@ -11,3 +16,4 @@
 		{{/each}}
 	</div>
 </div>
+<!-- End Top Bar -->

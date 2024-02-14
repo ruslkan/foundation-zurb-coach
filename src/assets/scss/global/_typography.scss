@@ -2,7 +2,6 @@ h1 {
 	@include breakpoint(small) {
 		font-size: 28px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
@@ -19,14 +18,12 @@ h2 {
 	@include breakpoint(small) {
 		font-size: 20px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
 	@include breakpoint(medium up) {
 		font-size: 40px;
 		font-weight: bold;
-		//line-height: 57px;
 		letter-spacing: 0.2px;
 	}
 }
@@ -35,12 +32,11 @@ h3 {
 	@include breakpoint(small) {
 		font-size: 19px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
 	@include breakpoint(medium up) {
-		font-size: 24px;
+		font-size: 28px;
 		font-weight: bold;
 		line-height: 32px;
 		letter-spacing: 0.1px;
@@ -51,7 +47,6 @@ h4 {
 	@include breakpoint(small) {
 		font-size: 14px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
@@ -68,7 +63,6 @@ h5 {
 	@include breakpoint(small) {
 		font-size: 17px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
@@ -84,7 +78,6 @@ h6 {
 	@include breakpoint(small) {
 		font-size: 16px;
 		font-weight: bold;
-		//line-height: 80px;
 		letter-spacing: 0.2px;
 	}
 
@@ -111,7 +104,7 @@ h6 {
 }
 
 .paragraph {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 20px;
 	letter-spacing: 0.2px;

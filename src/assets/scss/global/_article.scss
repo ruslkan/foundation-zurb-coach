@@ -1,0 +1,20 @@
+/* =======
+   ARTICLE
+   ======= */
+.article {
+	color: $text-color;
+
+	&__header {
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	&__subtitle {
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	&__text {
+		padding: 20px 0;
+	}
+}

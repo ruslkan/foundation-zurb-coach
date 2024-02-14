@@ -13,6 +13,7 @@
 	color: $light-text-color;
 	background-color: $primary-color;
 	padding: 8px 30px;
+	@include bordered($width: 1px, $type: solid, $color: $light-text-color );
 	@include border-radius(20px);
 
 	&:hover {
@@ -25,12 +26,14 @@
 		&:active {
 			background-color: $primary-color;
 		}
-
 	}
 
 	&_bg-without {
-		@include bordered($width: 1px, $type: solid, $color: $light-text-color );
 		background: none;
+
+		&:hover {
+			background-color: scale-color($primary-color, $lightness: -24%);
+		}
 
 		&:focus,
 		&:active {
