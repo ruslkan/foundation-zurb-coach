@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "link": "/#aboutMe",
+      "text": "Обо мне"
+    },
+    {
+      "link": "/#services",
+      "text": "Услуги"
+    },
+    {
+      "link": "/#contact",
+      "text": "Контакты"
+    }
+  ]
+}

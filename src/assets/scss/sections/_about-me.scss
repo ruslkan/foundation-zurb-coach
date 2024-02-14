@@ -11,19 +11,37 @@
 	background-position: top;
 
 	&__img {
-		@include xy-cell(5);
+		@include breakpoint(small) {
+			@include xy-cell(12);
+		}
+
+		@include breakpoint(medium up) {
+			@include xy-cell(5);
+		}
 	}
 
-	&__title {
+	&__article {
+		@include breakpoint(small) {
+			@include xy-cell(12);
+		}
+
+		@include breakpoint(medium up) {
+			@include xy-cell(7);
+			@include flex-align-self(middle);
+		}
+	}
+
+	&__article-title {
+		@include breakpoint(small) {
+			margin-top: 25px;
+			color: $light-text-color;
+		}
+
 		text-align: center;
 	}
 
-	&__text {
-		@include xy-cell(7);
-		@include flex-align-self(middle);
-	}
-
-	&__content {
+	&__article-text {
+		color: $light-text-color;
 		margin-top: 25px;
 	}
 }
