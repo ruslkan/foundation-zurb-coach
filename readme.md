@@ -1,8 +1,9 @@
-# ZURB Template
+### Introduction
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/foundation/foundation-sites/issues) repo.**
+This is the layout of a landing page for an coach. With adaptation to mobile screens.
+Demo: https://ruslkan.github.io/coach/
 
-This is the official ZURB Template for use with [Foundation for Sites](https://get.foundation/sites/docs/). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+Based on ZURB Foundation for use with [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -13,14 +14,12 @@ This is the official ZURB Template for use with [Foundation for Sites](https://g
   - JavaScript module bundling with webpack
   - Image compression
 
-## Installation
+### Installation
 
 To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (Version 12 or greater recommended)
+- [NodeJS](https://nodejs.org/en/) (Version 12 or greater recommended, tested with 14.21.3)
 - [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
 ### Using the CLI
 
@@ -49,7 +48,7 @@ foundation watch
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://github.com/foundation/foundation-zurb-template projectname
+git clone https://github.com/ruslkan/foundation-zurb-coach projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
@@ -66,3 +65,7 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `yarn run build`.
+
+### License
+
+Electric is an open source project that is licensed under MIT.
