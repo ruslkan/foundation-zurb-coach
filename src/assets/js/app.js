@@ -14,39 +14,3 @@ require('foundation-sites')
 // import './lib/foundation-explicit-pieces'
 
 $(document).foundation()
-
-$(document).ready(function () {
-  $('.gallery-carousel').owlCarousel({
-    nav: true,
-    navText: [
-      '<img src="http://randomsite.zzz.com.ua/cabel/img/s8_al.png">',
-      '<img src="http://randomsite.zzz.com.ua/cabel/img/s8_ar.png">',
-    ],
-    margin: 10,
-    loop: true,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      480: {
-        items: 2,
-      },
-      768: {
-        items: 3,
-      },
-      992: {
-        items: 4,
-      },
-    },
-  })
-
-  $('.popup-gallery').magnificPopup({
-    delegate: '.owl-item:not(.cloned) a',
-    type: 'image',
-    removalDelay: 500, //delay removal by X to allow out-animation
-    gallery: {
-      enabled: true,
-    },
-  })
-})

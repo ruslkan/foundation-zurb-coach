@@ -12,6 +12,7 @@ import webpack2 from 'webpack'
 import named from 'vinyl-named'
 import autoprefixer from 'autoprefixer'
 import imagemin from 'gulp-imagemin'
+import ghPages from 'gulp-gh-pages'
 
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
@@ -48,6 +49,11 @@ gulp.task(
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch))
+
+// Deploy in GitHub Pages
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*').pipe(ghPages())
+})
 
 // Delete the "dist" folder
 // This happens every time a build starts
