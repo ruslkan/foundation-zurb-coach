@@ -1,12 +1,4 @@
 <?php
-$zaschita = md5(md5(time()) . "rus");
-$vremya = md5(time());
-
-
-$pol_time = $_GET['p'];
-$vernii_shifr = md5($pol_time . "rus");
-$pol_shifr = $_POST['zf'];
-
 /* checking the existence of variables */
 if (isset($_POST['phone'])) {
 	$phone = $_POST['phone'];
@@ -26,7 +18,7 @@ $mes = "Тема: Сообщение с сайта\nТелефон: $phone\nИм
 
 /* sending a letter to the specified e-mail */
 $sub = 'Сообщение с сайта';
-$email = '<yourdomen.ru>'; // from whom
+$email = '<katerinaemelyanchik.by>'; // from whom
 $send = mail($address, $sub, $mes, "Content-type:text/plain; charset = utf-8\r\nFrom:$email");
 
 ini_set('short_open_tag', 'On');
@@ -35,28 +27,43 @@ header('Refresh: 3; URL=index.html');
 
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta http-equiv="refresh" content="3; url=index.html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>С вами свяжутся</title>
-	<meta name="keywords" content="">
-	<meta name="description" content="{{ description }}" />
-	<link rel="stylesheet" href="{{root}}assets/css/app.css" />
-</head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>С вами свяжутся</title>
+<link rel="stylesheet" href="{{root}}assets/css/app.css" />
 
 <body>
 
+	<div class="callout-wrap">
+		<div class="callout">
+			<h5>Ваше сообщение отправлено!</h5>
+			<p>Я свяжусь с Вами в ближайшее время</p>
+		</div>
+	</div>
 	<style type="text/css">
 		body {
 			background: #252b42;
 		}
+
+		.callout-wrap {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #ffffff;
+		}
+
+		.callout {
+			text-align: center;
+			padding: 20px;
+			color: #2dc071;
+			font-size: 22px;
+		}
 	</style>
 	<script type="text/javascript">
-		setTimeout('location.replace("/index.html")', 3000);
-		/* change current page address after 3 seconds (3000 milliseconds) */
+		setTimeout('location.replace("/index.html")', 5000);
+		/* change current page address after 5 seconds (5000 milliseconds) */
 	</script>
 </body>
 

@@ -1,13 +1,14 @@
 {
-  "name": "foundation-zurb-template",
+  "name": "foundation-zurb-coach",
   "version": "1.0.0",
-  "description": "Official Template for Foundation for Sites.",
+  "description": "Template for Foundation for Sites coach landing.",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "deploy": "gulp build && gh-pages -d dist"
   },
-  "author": "Foundation Yetinauts <contact@get.foundation> (https://get.foundation)",
+  "author": "Ruslan Kanashuk <ruslan.kanashuk@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "latest",
@@ -23,12 +24,14 @@
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
     "fs": "^0.0.1-security",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-extname": "^0.2.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.7",
@@ -52,10 +55,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
+    "url": "git@github.com:ruslkan/foundation-zurb-coach.git"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
+    "url": "git@github.com:ruslkan/foundation-zurb-coach/issues",
     "email": "foundation@zurb.com"
   },
   "private": true,
