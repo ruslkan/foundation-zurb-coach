@@ -4,6 +4,15 @@
 @import 'foundation';
 @import 'motion-ui';
 
+/* Slick Slider */
+$slick-font-path: "../fonts/";
+$slick-loader-path: '../img/';
+@import 'node_modules/slick-slider/slick/slick.scss';
+@import 'node_modules/slick-slider/slick/slick-theme.scss';
+
+/* Magnific PopUp */
+@import "node_modules/magnific-popup/src/css/main.scss";
+
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
@@ -28,16 +37,16 @@
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 @include foundation-callout;
-@include foundation-card;
+// @include foundation-card;
 // @include foundation-dropdown;
 // @include foundation-pagination;
-@include foundation-tooltip;
+// @include foundation-tooltip;
 
 // Containers
 // @include foundation-accordion;
-@include foundation-media-object;
+// @include foundation-media-object;
 // @include foundation-orbit;
-@include foundation-responsive-embed;
+// @include foundation-responsive-embed;
 // @include foundation-tabs;
 @include foundation-thumbnail;
 // Menu-based containers
@@ -48,10 +57,10 @@
 // @include foundation-dropdown-menu;
 
 // Layout components
-@include foundation-off-canvas;
+// @include foundation-off-canvas;
 @include foundation-reveal;
-@include foundation-sticky;
-@include foundation-title-bar;
+// @include foundation-sticky;
+// @include foundation-title-bar;
 @include foundation-top-bar;
 
 // Helpers
@@ -81,6 +90,7 @@
 @import 'sections/first-screen';
 @import 'sections/about-me';
 @import 'sections/services';
+@import 'sections/certificates';
 @import 'sections/payment-vendor';
 @import 'sections/contact';
 

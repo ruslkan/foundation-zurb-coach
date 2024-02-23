@@ -32,7 +32,10 @@
 	}
 
 	&__article-title {
+		@include separator($height: 3px, $background: $light-text-color);
+
 		@include breakpoint(small) {
+
 			margin-top: 25px;
 			color: $light-text-color;
 		}

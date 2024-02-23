@@ -12,7 +12,12 @@
 		padding: 20px 0;
 	}
 
-	&__content {
+	&__headline {
+		@include xy-cell;
+		padding: 40px 0 20px 0;
+	}
+
+	&__paragraph {
 		padding: 20px 0;
 	}
 }
