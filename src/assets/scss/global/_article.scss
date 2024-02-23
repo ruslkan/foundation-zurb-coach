@@ -9,12 +9,23 @@
 		text-align: center;
 	}
 
+	&__title {
+		font-size: 28px;
+	}
+
 	&__subtitle {
 		padding: 20px 0;
 		text-align: center;
 	}
 
 	&__text {
-		padding: 20px 0;
+		@include breakpoint(small) {
+			padding: 0;
+		}
+
+		@include breakpoint(medium up) {
+			padding: 20px 0;
+
+		}
 	}
 }

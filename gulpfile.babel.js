@@ -12,7 +12,7 @@ import webpack2 from 'webpack'
 import named from 'vinyl-named'
 import autoprefixer from 'autoprefixer'
 import imagemin from 'gulp-imagemin'
-import ghPages from 'gulp-gh-pages'
+import ghPages from 'gh-pages'
 
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')

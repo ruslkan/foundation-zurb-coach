@@ -2,12 +2,13 @@
    CONTACT SECTION
    =============== */
 .contact {
+	color: $text-color;
 
-	&__content-container {
-		padding: 40px 0;
+	&__title {
+		@include separator($align: left, $height: 3px, $background: $text-color);
 	}
 
-	&__text {
+	&__paragraph {
 		@include breakpoint(small) {
 			@include xy-cell(12);
 		}

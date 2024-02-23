@@ -3,11 +3,12 @@
    ================ */
 .services {
 
-	&__content-container {
-		padding: 40px 0;
+	&__title {
+		@include separator($align: left, $height: 3px, $background: $primary-color);
+		color: $primary-color;
 	}
 
-	&__text {
+	&__paragraph {
 		@include breakpoint(small) {
 			@include xy-cell(12);
 		}
@@ -15,6 +16,8 @@
 		@include breakpoint(medium up) {
 			@include xy-cell(8);
 		}
+
+		color: $text-color;
 	}
 
 	&__button {
