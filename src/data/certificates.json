@@ -31,6 +31,11 @@
       "imgAlt": "Гешталь 1-я ступень"
     },
     {
+      "imgLarge": "assets/img/sections/certificates/large/1080x1080/gestalt_intensive_2023_1080x1080.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/640x480/gestalt_intensive_2023_640x480.jpg",
+      "imgAlt": "Городские этюды"
+    },
+    {
       "imgLarge": "assets/img/sections/certificates/large/1080x1080/money_1080x1080.jpg",
       "imgSmall": "assets/img/sections/certificates/small/640x480/money_640x480.jpg",
       "imgAlt": "Деньги и расширение финансового мышления"
@@ -39,6 +44,11 @@
       "imgLarge": "assets/img/sections/certificates/large/1080x1080/thanatotherapy_1080x1080.jpg",
       "imgSmall": "assets/img/sections/certificates/small/640x480/thanatotherapy_640x480.jpg",
       "imgAlt": "Танототерапия"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/exponential-coaching.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/640x480/exponential-coaching_640x480.jpg",
+      "imgAlt": "Экспонциальный коучинг"
     }
   ]
 }
