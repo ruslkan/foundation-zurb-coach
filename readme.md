@@ -1,7 +1,7 @@
 ### Introduction
 
 This is the layout of a landing page for an coach. With adaptation to mobile screens.
-Demo: https://ruslkan.github.io/foundation-zurb-coach/ && http://katerinaemelyanchik.by
+Demo: https://ruslkan.github.io/foundation-zurb-coach/
 
 Based on ZURB Foundation for use with [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 
