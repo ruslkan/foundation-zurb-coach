@@ -1,54 +1,59 @@
 {
   "list": [
     {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/3rd_stage_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/3rd_stage_640x480.jpg",
-      "imgAlt": "3-я ступень"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/aroma_coach_master_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/aroma_coach_master_640x480.jpg",
-      "imgAlt": "Арома Коуч Мастер"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/coach_practitioner_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/coach_practitioner_640x480.jpg",
-      "imgAlt": "Коуч Практик"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/enneagram_master_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/enneagram_master_640x480.jpg",
-      "imgAlt": "Мастер Эннеаграммы"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/enneagram_practitioner_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/enneagram_practitioner_640x480.jpg",
-      "imgAlt": "Практик Эннеаграммы"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/gestalt_1st_stage_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/gestalt_1st_stage_640x480.jpg",
-      "imgAlt": "Гешталь 1-я ступень"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/gestalt_intensive_2023_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/gestalt_intensive_2023_640x480.jpg",
-      "imgAlt": "Городские этюды"
-    },
-    {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/money_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/money_640x480.jpg",
+      "imgLarge": "assets/img/sections/certificates/large/money.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/money.jpg",
       "imgAlt": "Деньги и расширение финансового мышления"
     },
     {
-      "imgLarge": "assets/img/sections/certificates/large/1080x1080/thanatotherapy_1080x1080.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/thanatotherapy_640x480.jpg",
-      "imgAlt": "Танототерапия"
+      "imgLarge": "assets/img/sections/certificates/large/coach_practitioner.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/coach_practitioner.jpg",
+      "imgAlt": "Коуч Практик"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/aroma_coach_master.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/aroma_coach_master.jpg",
+      "imgAlt": "Арома Коуч Мастер"
     },
     {
       "imgLarge": "assets/img/sections/certificates/large/exponential-coaching.jpg",
-      "imgSmall": "assets/img/sections/certificates/small/640x480/exponential-coaching_640x480.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/exponential-coaching.jpg",
       "imgAlt": "Экспонциальный коучинг"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/gestalt_1st_stage.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/gestalt_1st_stage.jpg",
+      "imgAlt": "Гешталь 1-я ступень"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/enneagram_practitioner.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/enneagram_practitioner.jpg",
+      "imgAlt": "Практик Эннеаграммы"
+    },
+		{
+      "imgLarge": "assets/img/sections/certificates/large/runway.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/runway.jpg",
+      "imgAlt": "Взлетная полоса"
+    },
+ 		{
+      "imgLarge": "assets/img/sections/certificates/large/thanatotherapy.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/thanatotherapy.jpg",
+      "imgAlt": "Танототерапия"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/3rd_stage.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/3rd_stage.jpg",
+      "imgAlt": "3-я ступень"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/enneagram_master.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/enneagram_master.jpg",
+      "imgAlt": "Мастер Эннеаграммы"
+    },
+    {
+      "imgLarge": "assets/img/sections/certificates/large/gestalt_intensive_2023.jpg",
+      "imgSmall": "assets/img/sections/certificates/small/gestalt_intensive_2023.jpg",
+      "imgAlt": "Городские этюды"
     }
   ]
 }
