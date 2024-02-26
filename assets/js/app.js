@@ -20881,7 +20881,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     slidesToScroll: 1,
     infinite: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3500,
+    centerMode: true,
+    variableWidth: true,
     adaptiveHeight: true,
     closeBtnInside: false,
     responsive: [{
